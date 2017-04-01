@@ -1,4 +1,4 @@
-# storm-metrics-influxdb
+# storm-metrics-influxdb [![Build Status](https://travis-ci.org/christiangda/storm-metrics-influxdb.svg)](https://travis-ci.org/christiangda/)
 
 #### Table of Contents
 1. [Overview](#overview)
@@ -40,7 +40,7 @@ Server: [Maven release repository](https://mvnrepository.com/artifact/com.github
 
 ```xml
 <dependency>
-    <groupId>com.github.christiangda.storm</groupId>
+    <groupId>com.github.christiangda</groupId>
     <artifactId>storm-metrics-influxdb</artifactId>
     <version>See release version in the link upper</version>
 </dependency>
@@ -52,7 +52,7 @@ Server: [Maven snaphot repository]()
 
 ```xml
 <dependency>
-  <groupId>com.github.christiangda.storm</groupId>
+  <groupId>com.github.christiangda</groupId>
     <artifactId>storm-metrics-influxdb</artifactId>
     <version>See release version in the link upper (remember)</version>
 </dependency>

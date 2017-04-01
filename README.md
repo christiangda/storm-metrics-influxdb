@@ -1,4 +1,4 @@
-# storm-metrics-influxdb [![Build Status](https://travis-ci.org/christiangda/storm-metrics-influxdb.svg)](https://travis-ci.org/christiangda/)
+# storm-metrics-influxdb [![Build Status](https://travis-ci.org/christiangda/storm-metrics-influxdb.svg?branch=master)](https://travis-ci.org/christiangda/)
 
 #### Table of Contents
 1. [Overview](#overview)
@@ -36,7 +36,7 @@ The actual version of artifacts are:
 
 **Releases artifacts**
 
-Server: [Maven release repository](https://mvnrepository.com/artifact/com.github.christiangda/storm-metrics-influxdb)
+Server: [Maven release repository](https://oss.sonatype.org/content/groups/staging)
 
 ```xml
 <dependency>
@@ -54,7 +54,7 @@ Server: [Maven snaphot repository](https://oss.sonatype.org/content/groups/publi
 <dependency>
   <groupId>com.github.christiangda</groupId>
     <artifactId>storm-metrics-influxdb</artifactId>
-    <version>See release version in the link upper (remember)</version>
+    <version>See release version in the link upper</version>
 </dependency>
 ```
 
@@ -113,24 +113,7 @@ of deploy to [Github](https://github.com/christiangda/storm-metrics-influxdb) re
 
 ### Create a SNAPSHOT
 
-```
-mvn clean compile test
-# git add .  #
-# git commit -m "comment about my last change" # this will trigering the github webhook and jenkins build
-
-mvn deploy
-```
-
-### Create a Release
-
-```
-mvn clean test
-# git add .
-# git commit -m "comment about my last change"  # this will trigering the github webhook and jenkins build
-
-mvn release:prepare
-mvn release:perform
-```
+Under construction!
 
 ## Authors
 

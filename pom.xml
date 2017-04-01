@@ -42,8 +42,8 @@
 
     <!-- Necessary to use Maven Release Plugins -->
     <scm>
-        <connection>scm:git:git://github.com:christiangda/storm-metrics-influxdb.git</connection>
-        <developerConnection>scm:git:ssh://github.com:christiangda/storm-metrics-influxdb.git</developerConnection>
+        <connection>scm:git:git@github.com:christiangda/storm-metrics-influxdb.git</connection>
+        <developerConnection>scm:git:git@github.com:christiangda/storm-metrics-influxdb.git</developerConnection>
         <url>http://github.com/christiangda/storm-metrics-influxdb/tree/master</url>
       <tag>storm-metrics-influxdb-1.0.0</tag>
   </scm>

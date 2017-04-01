@@ -1,0 +1,18 @@
+language: java
+
+jdk:
+  - openjdk7
+  - openjdk8
+  - oraclejdk7
+  - oraclejdk8
+
+script:
+  - echo ============ Build and test =====================
+  - mvn -Dpgp.skip-true clean test
+
+notifications:
+  email:
+    recipients:
+      - christiangda@gmail.com
+    on_success: change
+    on_failure: always

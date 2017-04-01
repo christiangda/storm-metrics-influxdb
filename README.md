@@ -1,4 +1,8 @@
-# storm-metrics-influxdb [![Build Status](https://travis-ci.org/christiangda/storm-metrics-influxdb.svg?branch=master)](https://travis-ci.org/christiangda/)
+# storm-metrics-influxdb 
+
+[![Build Status](https://travis-ci.org/christiangda/storm-metrics-influxdb.svg?branch=master)](https://travis-ci.org/christiangda/)
+[![codecov](https://codecov.io/gh/christiangda/storm-metrics-influxdb/branch/master/graph/badge.svg)](https://codecov.io/gh/christiangda/storm-metrics-influxdb)
+[![Code Climate](https://codeclimate.com/github/christiangda/storm-metrics-influxdb/badges/gpa.svg)](https://codeclimate.com/github/christiangda/storm-metrics-influxdb)
 
 #### Table of Contents
 1. [Overview](#overview)

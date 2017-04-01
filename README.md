@@ -48,7 +48,7 @@ Server: [Maven release repository](https://mvnrepository.com/artifact/com.github
 
 **SNAPSHOT artifacts**
 
-Server: [Maven snaphot repository]()
+Server: [Maven snaphot repository](https://oss.sonatype.org/content/groups/public)
 
 ```xml
 <dependency>

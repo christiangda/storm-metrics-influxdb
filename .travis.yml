@@ -1,14 +1,12 @@
 language: java
 
 jdk:
-  - openjdk7
-  - openjdk8
   - oraclejdk7
   - oraclejdk8
 
 script:
   - echo ============ Build and test =====================
-  - mvn -Dpgp.skip-true clean test
+  - mvn -DskipTests=true -Dmaven.javadoc.skip=true -B -V  clean test
 
 notifications:
   email:

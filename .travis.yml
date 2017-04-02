@@ -7,6 +7,7 @@ jdk:
 script:
   - echo ============ Build and test =====================
   - mvn -DskipTests=true -Dmaven.javadoc.skip=true -B -V  clean test package
+  - bash <(curl -s https://codecov.io/bash) -t cc42a5ce-f4e0-456c-8418-b2095665c18b
 
 notifications:
   email:
@@ -14,3 +15,7 @@ notifications:
       - christiangda@gmail.com
     on_success: change
     on_failure: always
+
+  addons:
+    code_climate:
+      repo_token: 902f6018583105d5d1db894e497a90b5633a5fac546077f0d772d18430a7f406

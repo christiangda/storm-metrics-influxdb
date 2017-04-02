@@ -9,10 +9,8 @@
 2. [Description - What it does and why it is useful](#description)
 3. [Setup - The basics of getting started with it](#setup)
     * [Last Version and Repository](#version)
-    * [Using Maven](#using-Maven)
-    * [Using SBT](#using-sbt)
-    * [Using Gradle](#using-gradle)
 4. [Usage - Configuration options and additional functionality](#usage)
+    * [Example](#example)
 5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
 5. [Limitations - OS compatibility, etc.](#limitations)
 6. [Development - Guide for contributing to the module](#development)
@@ -94,6 +92,11 @@ topology.metrics.consumer.register:
       metrics.influxdb.measurement.prefix: "YOUR_INFLUXDB_MEASUREMENT_PREFIX"
       metrics.influxdb.enable.gzip: true
 ```
+
+### Example
+
+I've created a Maven Apache Storm project to show you an example, if you want to view it
+go to [test-storm-metrics-influxdb](https://github.com/christiangda/test-storm-metrics-influxdb)
 
 ## Reference
 

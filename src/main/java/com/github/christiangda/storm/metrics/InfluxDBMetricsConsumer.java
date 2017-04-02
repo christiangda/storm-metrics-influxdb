@@ -17,7 +17,7 @@ import java.util.Map;
  * Apache Storm has two ways for implementing a Metrics Collector,
  * the first is setting in your topology configuration a Metrics Collector, and
  * the second is configure Apache Storm cluster for use a Metrics Collector for all Topologies.
- *
+ * <p>
  * If you want to use the first way to set a Metrics Collector in your Topology, you need to put that
  * in your Topology Configuration:
  * </p>
@@ -104,11 +104,9 @@ public class InfluxDBMetricsConsumer implements IMetricsConsumer {
         try {
             this.influxDBSender.prepareConnection();
 
-            @SuppressWarnings("unchecked")
-            final Map<String, String> tags = new HashMap();
+            @SuppressWarnings("unchecked") final Map<String, String> tags = new HashMap();
 
-            @SuppressWarnings("unchecked")
-            final Map<String, Object> fields = new HashMap();
+            @SuppressWarnings("unchecked") final Map<String, Object> fields = new HashMap();
 
             // InfluxDB tags are like a field but indexed
             tags.put("ComponentId", taskInfo.srcComponentId);
@@ -144,8 +142,9 @@ public class InfluxDBMetricsConsumer implements IMetricsConsumer {
      * Verify if DataPoint type is a Map and decompose it using recursion,
      * then send it to influxDBSender.
      *
-     * @param name  dataPoint name
-     * @param value dataPoint value
+     * @param name           dataPoint name
+     * @param value          dataPoint value
+     * @param recursionRound maximum recursion depth
      */
     public void processDataPoint(String name, Object value, int recursionRound) {
 

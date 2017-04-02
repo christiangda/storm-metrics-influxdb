@@ -16,6 +16,6 @@ notifications:
     on_success: change
     on_failure: always
 
-  addons:
+addons:
     code_climate:
-      repo_token: 902f6018583105d5d1db894e497a90b5633a5fac546077f0d772d18430a7f406
+        repo_token: 902f6018583105d5d1db894e497a90b5633a5fac546077f0d772d18430a7f406

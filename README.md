@@ -113,10 +113,25 @@ go to [test-storm-metrics-influxdb](https://github.com/christiangda/test-storm-m
 * [InfluxDB](https://docs.influxdata.com/influxdb/v1.2/) >= 1.0.0
 * [Java](https://www.java.com/es/download/help/index_installing.xml?j=7) >= 7
 
-## Development
+## Development / Contributing
+
+* [Fork it](https://github.com/christiangda/storm-metrics-influxdb#fork-destination-box) / [Clone it](https://github.com/christiangda/storm-metrics-influxdb.git) (`git clone https://github.com/christiangda/storm-metrics-influxdb.git; cd storm-metrics-influxdb`)
+* Create your feature branch (`git checkout -b my-new-feature`)
+* Install [Maven](https://maven.apache.org/install.html)
+* Make your changes / improvements / fixes / etc, and of course **your Unit Test** for new code
+* Run the tests (`mvn clean compile test package`)
+* Commit your changes (`git add . && git commit -m 'Added some feature'`)
+* Push to the branch (`git push -u origin my-new-feature`)
+* [Create new Pull Request](https://github.com/christiangda/storm-metrics-influxdb/pull/new/master)
+
+**Of course, bug reports and suggestions for improvements are always welcome.**
+
+You can also support my work on powerdns via
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/christiangda)
 
 This project use [Maven Release Plugin](http://maven.apache.org/maven-release/maven-release-plugin/) to do easy the process
-of deploy to [Github](https://github.com/christiangda/storm-metrics-influxdb) repository and [Maven Repository]()
+of deploy to [Github](https://github.com/christiangda/storm-metrics-influxdb) repository and [Maven Repository](https://oss.sonatype.org/content/groups/staging)
 
 ### Create a SNAPSHOT
 

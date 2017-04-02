@@ -24,3 +24,6 @@ comment:
   layout: "header, diff"
   behavior: default
   require_changes: no
+
+codecov:
+  token: cc42a5ce-f4e0-456c-8418-b2095665c18b

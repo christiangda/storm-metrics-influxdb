@@ -139,8 +139,8 @@ Under construction!
 
 ## Authors
 
-* [Christian González](https://github.com/christiangda) `<christian at gmail dot com>`
-* [Nikolay Melnikov]() `melnikovkolya at gmail dot com`
+* [Christian González](https://github.com/christiangda) 
+* [Nikolay Melnikov](https://github.com/melnikovkolya)
 
 ## License
 

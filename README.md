@@ -13,7 +13,7 @@
     * [Example](#example)
 5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
 5. [Limitations - OS compatibility, etc.](#limitations)
-6. [Development - Guide for contributing to the module](#Development-/-Contributing)
+6. [Development - Guide for contributing to the module](#development)
 7. [Authors - Who is contributing to do it](#authors)
 8. [License](#license)
 
@@ -113,7 +113,7 @@ go to [test-storm-metrics-influxdb](https://github.com/christiangda/test-storm-m
 * [InfluxDB](https://docs.influxdata.com/influxdb/v1.2/) >= 1.0.0
 * [Java](https://www.java.com/es/download/help/index_installing.xml?j=7) >= 7
 
-## Development / Contributing
+## Development
 
 * [Fork it](https://github.com/christiangda/storm-metrics-influxdb#fork-destination-box) / [Clone it](https://github.com/christiangda/storm-metrics-influxdb.git) (`git clone https://github.com/christiangda/storm-metrics-influxdb.git; cd storm-metrics-influxdb`)
 * Create your feature branch (`git checkout -b my-new-feature`)
@@ -140,6 +140,7 @@ Under construction!
 ## Authors
 
 * [Christian González](https://github.com/christiangda) `<christian at gmail dot com>`
+* [Nikolay Melnikov]() `melnikovkolya at gmail dot com`
 
 ## License
 

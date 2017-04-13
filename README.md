@@ -38,7 +38,7 @@ The actual version of artifacts are:
 
 **Releases artifacts**
 
-Server: [Maven release repository](https://oss.sonatype.org/content/groups/staging)
+Server: [Maven release repository](https://oss.sonatype.org/content/groups/staging/com/github/christiangda/storm-metrics-influxdb)
 
 ```xml
 <dependency>
@@ -50,7 +50,7 @@ Server: [Maven release repository](https://oss.sonatype.org/content/groups/stagi
 
 **SNAPSHOT artifacts**
 
-Server: [Maven snaphot repository](https://oss.sonatype.org/content/groups/public)
+Server: [Maven snaphot repository](https://oss.sonatype.org/content/groups/public/com/github/christiangda/storm-metrics-influxdb)
 
 ```xml
 <dependency>
@@ -133,9 +133,6 @@ You can also support my work on powerdns via
 This project use [Maven Release Plugin](http://maven.apache.org/maven-release/maven-release-plugin/) to do easy the process
 of deploy to [Github](https://github.com/christiangda/storm-metrics-influxdb) repository and [Maven Repository](https://oss.sonatype.org/content/groups/staging)
 
-### Create a SNAPSHOT
-
-Under construction!
 
 ## Authors
 

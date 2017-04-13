@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/christiangda/storm-metrics-influxdb.svg?branch=master)](https://travis-ci.org/christiangda/)
 [![codecov](https://codecov.io/gh/christiangda/storm-metrics-influxdb/branch/master/graph/badge.svg)](https://codecov.io/gh/christiangda/storm-metrics-influxdb)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.christiangda/storm-metrics-influxdb/badge.svg?style=flat)](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22storm-metrics-influxdb%22)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.christiangda/storm-metrics-influxdb/badge.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/com.github.christiangda/storm-metrics-influxdb)
 
 #### Table of Contents
 1. [Overview](#overview)

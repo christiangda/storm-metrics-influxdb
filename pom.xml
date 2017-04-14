@@ -23,7 +23,7 @@
 
     <groupId>com.github.christiangda</groupId>
     <artifactId>storm-metrics-influxdb</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>${project.groupId}:${project.artifactId}</name>
@@ -45,7 +45,7 @@
         <connection>scm:git:git@github.com:christiangda/storm-metrics-influxdb.git</connection>
         <developerConnection>scm:git:git@github.com:christiangda/storm-metrics-influxdb.git</developerConnection>
         <url>http://github.com/christiangda/storm-metrics-influxdb/tree/master</url>
-        <tag>storm-metrics-influxdb-1.0.2</tag>
+        <tag>storm-metrics-influxdb-1.0.0</tag>
     </scm>
 
     <!-- Necessary to use Maven Deploy Plugins -->

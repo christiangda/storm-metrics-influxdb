@@ -159,12 +159,16 @@ class InfluxDBSender {
                     .build();
             this.batchPoints.point(point);
         } else if (value instanceof Float) {
-            Point point = Point.measurement(measurement)
-                    .addField("value", (Float) value)
-                    .fields(this.fields)
-                    .tag(this.tags)
-                    .build();
-            this.batchPoints.point(point);
+            if (!((Float) value).isNaN() && !((Float) value).isInfinite()) {
+                Point point = Point.measurement(measurement)
+                        .addField("value", (Float) value)
+                        .fields(this.fields)
+                        .tag(this.tags)
+                        .build();
+                this.batchPoints.point(point);
+            } else {
+                LOG.warn("{}: Discarding dataPoint: {}, value is null", this.getClass().getSimpleName(), measurement);
+            }
         } else if (value instanceof Integer) {
             Point point = Point.measurement(measurement)
                     .addField("value", (Integer) value)
@@ -180,26 +184,38 @@ class InfluxDBSender {
                     .build();
             this.batchPoints.point(point);
         } else if (value instanceof Long) {
-            Point point = Point.measurement(measurement)
-                    .addField("value", ((Long) value).floatValue())
-                    .fields(this.fields)
-                    .tag(this.tags)
-                    .build();
-            this.batchPoints.point(point);
+            if (!((Float) ((Long) value).floatValue()).isNaN() && !((Float) ((Long) value).floatValue()).isInfinite()) {
+                Point point = Point.measurement(measurement)
+                        .addField("value", ((Long) value).floatValue())
+                        .fields(this.fields)
+                        .tag(this.tags)
+                        .build();
+                this.batchPoints.point(point);
+            } else {
+                LOG.warn("{}: Discarding dataPoint: {}, value is null", this.getClass().getSimpleName(), measurement);
+            }
         } else if (value instanceof Double) {
-            Point point = Point.measurement(measurement)
-                    .addField("value", ((Double) value).floatValue())
-                    .fields(this.fields)
-                    .tag(this.tags)
-                    .build();
-            this.batchPoints.point(point);
+            if (!((Float) ((Double) value).floatValue()).isNaN() && !((Float) ((Double) value).floatValue()).isInfinite()) {
+                Point point = Point.measurement(measurement)
+                        .addField("value", ((Double) value).floatValue())
+                        .fields(this.fields)
+                        .tag(this.tags)
+                        .build();
+                this.batchPoints.point(point);
+            } else {
+                LOG.warn("{}: Discarding dataPoint: {}, value is null", this.getClass().getSimpleName(), measurement);
+            }
         } else if (value instanceof Number) {
-            Point point = Point.measurement(measurement)
-                    .addField("value", ((Number) value).floatValue())
-                    .fields(this.fields)
-                    .tag(this.tags)
-                    .build();
-            this.batchPoints.point(point);
+            if (!((Float) ((Number) value).floatValue()).isNaN() && !((Float) ((Number) value).floatValue()).isInfinite()) {
+                Point point = Point.measurement(measurement)
+                        .addField("value", ((Number) value).floatValue())
+                        .fields(this.fields)
+                        .tag(this.tags)
+                        .build();
+                this.batchPoints.point(point);
+            } else {
+                LOG.warn("{}: Discarding dataPoint: {}, value is null", this.getClass().getSimpleName(), measurement);
+            }
         } else {
             LOG.warn("{}: Unable to parse the Java type of 'value' : [type:'{}' value:'{}']",
                     this.getClass().getSimpleName(),
@@ -212,6 +228,7 @@ class InfluxDBSender {
     /**
      * Send Points to InfluxDB server
      */
+
     public void sendPoints() {
 
         this.createDatabaseIfNotExists();

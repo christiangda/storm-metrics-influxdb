@@ -148,42 +148,42 @@ public class InfluxDBMetricsConsumer implements IMetricsConsumer {
      */
     public void processDataPoint(String name, Object value, int recursionRound) {
 
-        if (value != null) {
-            int recursion_times = (recursionRound > 0) ? recursionRound : 0;
+        int recursion_times = (recursionRound > 0) ? recursionRound : 0;
 
-            if (recursion_times <= MAX_RECURSION_TIMES) {
-                if (value instanceof String
-                        || value instanceof Float
-                        || value instanceof Integer
-                        || value instanceof Boolean
-                        || value instanceof Long
-                        || value instanceof Double
-                        || value instanceof Number) {
+        if (recursion_times <= MAX_RECURSION_TIMES) {
+            if (value instanceof String
+                    || value instanceof Float
+                    || value instanceof Integer
+                    || value instanceof Boolean
+                    || value instanceof Long
+                    || value instanceof Double
+                    || value instanceof Number) {
 
-                    LOG.debug("{}: Processing dataPoint: [ name: '{}', value: '{}' ]", this.getClass().getSimpleName(), name, value);
+                LOG.debug("{}: Processing dataPoint: [ name: '{}', value: '{}' ]", this.getClass().getSimpleName(), name, value);
 
-                    this.influxDBSender.prepareDataPoint(name, value);
-                } else if (value instanceof Map) {
+                this.influxDBSender.prepareDataPoint(name, value);
+            } else if (value instanceof Map) {
 
-                    LOG.debug("{}: Processing dataPoint<Map> ...", this.getClass().getSimpleName());
+                LOG.debug("{}: Processing dataPoint<Map> ...", this.getClass().getSimpleName());
 
-                    recursion_times += 1;
+                recursion_times += 1;
 
-                    @SuppressWarnings("unchecked")
-                    Map<String, Object> values = (Map<String, Object>) value;
+                @SuppressWarnings("unchecked")
+                Map<String, Object> values = (Map<String, Object>) value;
 
-                    for (Map.Entry<String, Object> entry : values.entrySet()) {
+                for (Map.Entry<String, Object> entry : values.entrySet()) {
 
-                        LOG.debug("{}: ... Processing Map dataPoint entry: [ name: '{}', value: '{}' ]", this.getClass().getSimpleName(), entry.getKey(), entry.getValue());
+                    LOG.debug("{}: ... Processing Map dataPoint entry: [ name: '{}', value: '{}' ]", this.getClass().getSimpleName(), entry.getKey(), entry.getValue());
 
+                    if (entry.getValue() != null) {
                         this.processDataPoint(entry.getKey(), entry.getValue(), recursion_times);
+                    } else {
+                        LOG.warn("{}: Discarding dataPoint: {}, value is null", this.getClass().getSimpleName(), name);
                     }
                 }
-            } else {
-                LOG.warn("{}: Too Many Nested values in DataPoint named = {}", this.getClass().getSimpleName(), name);
             }
         } else {
-            LOG.warn("{}: Discarding dataPoint: {}, value is null", this.getClass().getSimpleName(), name);
+            LOG.warn("{}: Too Many Nested values in DataPoint named = {}", this.getClass().getSimpleName(), name);
         }
     }
 

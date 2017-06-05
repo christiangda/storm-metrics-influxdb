@@ -9,10 +9,6 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
-/**
- *
- *
- */
 class InfluxDBSender {
 
     private static final Logger LOG = LoggerFactory.getLogger(InfluxDBSender.class);

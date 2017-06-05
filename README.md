@@ -141,6 +141,6 @@ of deploy to [Github](https://github.com/christiangda/storm-metrics-influxdb) re
 
 ## License
 
-This module is released under the GNU General Public License Version 3:
+This module is released under the Apache License Version 2.0:
 
-* [http://www.gnu.org/licenses/gpl-3.0-standalone.html](http://www.gnu.org/licenses/gpl-3.0-standalone.html)
+* [http://www.apache.org/licenses/LICENSE-2.0.html](http://www.apache.org/licenses/LICENSE-2.0.html)

@@ -38,6 +38,8 @@ The actual version of artifacts are:
 
 **Releases artifacts**
 
+Maven repository: [Maven repository](https://mvnrepository.com/artifact/com.github.christiangda/storm-metrics-influxdb)
+
 Server: [Maven release repository](https://oss.sonatype.org/content/groups/staging/com/github/christiangda/storm-metrics-influxdb)
 
 ```xml
@@ -111,7 +113,7 @@ go to [test-storm-metrics-influxdb](https://github.com/christiangda/test-storm-m
 
 * [Apache Storm](http://storm.apache.org/) >= 1.0.0
 * [InfluxDB](https://docs.influxdata.com/influxdb/v1.2/) >= 1.0.0
-* [Java](https://www.java.com/es/download/help/index_installing.xml?j=7) >= 7
+* [Java](https://www.java.com/es/download/help/index_installing.xml?j=7) >= 8
 
 ## Development
 

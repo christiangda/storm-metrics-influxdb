@@ -176,7 +176,7 @@ public class InfluxDBMetricsConsumer implements IMetricsConsumer {
                     LOG.debug("{}: ... Processing Map dataPoint entry: [ name: '{}', value: '{}' ]", this.getClass().getSimpleName(), entry.getKey(), entry.getValue());
 
                     if (entry.getValue() != null) {
-                        this.processDataPoint(entry.getKey(), entry.getValue(), recursion_times);
+                        this.processDataPoint(name + "." + entry.getKey(), entry.getValue(), recursion_times);
                     } else {
                         LOG.warn("{}: Discarding dataPoint: {}, value is null", this.getClass().getSimpleName(), name);
                     }

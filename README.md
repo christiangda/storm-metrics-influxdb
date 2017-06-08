@@ -14,7 +14,8 @@
 5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
 5. [Limitations - OS compatibility, etc.](#limitations)
 6. [Development - Guide for contributing to the module](#development)
-7. [Authors - Who is contributing to do it](#authors)
+7. [Authors - Who created it](#authors)
+7. [Collaborators - Who is contributing to do it](#collaborators)
 8. [License](#license)
 
 ## Overview
@@ -139,6 +140,9 @@ of deploy to [Github](https://github.com/christiangda/storm-metrics-influxdb) re
 ## Authors
 
 * [Christian González](https://github.com/christiangda) 
+
+## Collaborators
+
 * [Nikolay Melnikov](https://github.com/melnikovkolya)
 * [Stanislaw Stefanowski](https://github.com/DonnieDarko24)
 

@@ -140,6 +140,7 @@ of deploy to [Github](https://github.com/christiangda/storm-metrics-influxdb) re
 
 * [Christian González](https://github.com/christiangda) 
 * [Nikolay Melnikov](https://github.com/melnikovkolya)
+* [Stanislaw Stefanowski](https://github.com/DonnieDarko24)
 
 ## License
 
